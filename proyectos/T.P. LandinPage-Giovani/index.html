@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduControl</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 150px;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        h1 {
+            color: #222;
+            font-family:'Times New Roman', Times, serif;
+        }
+        p {
+            color: #555;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .email-input {
+            margin-top: 20px;
+        }
+        input[type="email"] {
+            padding: 10px;
+            width: 250px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            margin-left: 10px;
+            background-color: #ff6600;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .quote {
+            margin-top: 30px;
+            font-style: italic;
+            color: #444;
+        }
+        .galeria img {
+            width:25%;
+            height:25%;
+            margin: 20px;
+            transition: transform 0.3s;
+            border: 2px;
+            border-style: groove;
+            border-radius: 5px;
+            border-color: black;
+            display:inline;
+        }
+        .galeria img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>EduControl</h1>
+        <p>Sea bienvenido/a a la página oficial de nuestro sistema "EduControl". Aquí usted podrá enterarse de las últimas novedades con respecto a nuestro sistema de administración escolar, así también como solicitar una demo de nuestro producto o si lo desea, la versión oficial del mismo.</p>
+
+        <div class="galeria">
+            <img src="imgs/fachada.jfif" title="Imagen de la Institución por fuera"/>
+            <img src="imgs/logo.jfif" title="Logo de la Institución Madre"/>
+            <img src="imgs/salon.jfif" title="Imagen de los salones por dentro"/>
+            </div>
+        <div class="email-input">
+            <p><h3>En caso de querer una versión demo del producto, a continuación adjunte su dirección e-mail y esta le llegara sin ningún costo</h3></p> 
+            <input type="email" placeholder="Su correo electrónico...">
+            <button>Solicitar Demo</button>
+            <p><h3>Pero si busca una versión completa de nuestro sistema de administración, a continuación tendrá un botón que lo llevara a un mail directo de nuestros directivos para contactarnos</h3></p>
+            <button>Contactanos</button>
+        </div>
+        <div class="quote">
+            "La mejor herramienta para la gestión educativa."
+            <br><strong>Dirección y Administración de la E.E.S.T. N°3 y la E.E.S. N°7</strong>
+        </div>
+    </div>
+</body>
+</html>
