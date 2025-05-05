@@ -70,6 +70,11 @@ main {
     text-align: center;
     text-decoration: underline;
 }
+#links h2{
+    text-align: center;
+    text-decoration: underline;
+    color: alicewhite;
+}
 footer {
     background-color: #000;
     color: #fff; 
