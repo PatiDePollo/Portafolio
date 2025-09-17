@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florencio Elías Giuliano - Portfolio</title>
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/carpincho-park.jpg">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="floating">
+        <h1>Portafólio Personal de Florencio Elías Giuliano</h1>
+    </header>
+    <nav>
+        <h2>📋 Navegación</h2>
+        <ul>
+            <li><a href="#informacion-personal">👤 Información Personal</a></li>
+            <li><a href="#projects-tabs">🚀 Proyectos y Repositorios</a></li>
+            <li><a href="#repos">🔗 Repositorios en GitHub</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="informacion-personal" class="reveal">
+            <h2>👤 Información Personal</h2>
+            <p><span class="letras">Nombre:</span> Florencio Elías Giuliano</p>
+            <p><span class="letras">Edad:</span> 19 años</p>
+            <p><span class="letras">Ubicación:</span> Provincia de Buenos Aires, zona norte</p>
+            <p><span class="letras">Aspiraciones:</span> Desarrollador Web y Experto en Ciberseguridad</p>
+            <p><span class="letras">Estudios:</span> Título secundario en progreso (7º año) • Tecnicatura en Informática Personal y profesional en curso</p>
+            <p><span class="letras">Descripción:</span> Desarrollador junior apasionado por la tecnología, con conocimientos en HTML, CSS, JavaScript, PHP y un poco de Python. Estudiante de 7º año de secundaria con enfoque en la excelencia y mejora continua. Mi objetivo es ingresar a la UTN o UNGS para profundizar mis conocimientos en desarrollo y protección de software mediante la ciberseguridad. Me caracterizo por mi dedicación y compromiso en cada proyecto, siempre buscando entregar lo mejor de mi dando todo mi esfuerzo.</p>
+        </section>
+
+        <section id="projects-tabs" class="reveal">
+            <div class="tab-container">
+                <div class="tab-buttons">
+                    <button class="tab-button active" onclick="switchTab(event, 'projects')">🚀 Trabajos y Proyectos</button>
+                    <button class="tab-button" onclick="switchTab(event, 'repositories')">🔗 Repositorios GitHub</button>
+                </div>
+
+                <div id="projects" class="tab-content active">
+                    <h2>🚀 Trabajos y Proyectos</h2>
+                    <div id="cardswrapper">
+                        <div class="project-card">
+                            <img src="imgs/pro/educontrol.png" alt="Edu-Control" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDMwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjJGMkYyIi8+CjxjaXJjbGUgY3g9IjE1MCIgY3k9IjEwMCIgcj0iNDAiIGZpbGw9IiM5NjRCMDAiLz4KPHR0ZXh0IHg9IjE1MCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMzMzIiBmb250LWZhbWlseT0iSW50ZXIiIGZvbnQtc2l6ZT0iMTQiPkVkdS1Db250cm9sPC90ZXh0Pgo8L3N2Zz4K'"/>
+                            <h3>Edu-Control</h3>
+                            <div class="project-info">
+                                <p><strong>📅 Fecha:</strong> 17/03/2025</p>
+                                <p><strong>👨‍💻 Desarrollador:</strong> Florencio Elías</p>
+                                <p><strong>🛠️ Tecnologías:</strong> HTML, CSS</p>
+                                <p><strong>🎯 Objetivo:</strong> Landing page moderna para un sistema de gestión escolar ficticio</p>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://patidepollo.github.io/Proyecto.-EduControl/" target="_blank" class="btn">🌐 Ver Demo</a>
+                                <button class="btn btn-secondary" onclick="openModal('modal1')">📖 Más Info</button>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <img src="imgs/pro/vivero.png" alt="Florería Florencio" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDMwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjJGMkYyIi8+CjxjaXJjbGUgY3g9IjE1MCIgY3k9IjEwMCIgcj0iNDAiIGZpbGw9IiM5NjRCMDAiLz4KPHR0ZXh0IHg9IjE1MCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMzMzIiBmb250LWZhbWlseT0iSW50ZXIiIGZvbnQtc2l6ZT0iMTIiPkZsb3JlcsOtYSBGbG9yZW5jaW88L3RleHQ+Cjwvc3ZnPgo='"/>
+                            <h3>Florería Florencio</h3>
+                            <div class="project-info">
+                                <p><strong>📅 Fecha:</strong> 15/04/2025</p>
+                                <p><strong>👨‍💻 Desarrollador:</strong> Florencio Elías</p>
+                                <p><strong>🛠️ Tecnologías:</strong> HTML, CSS</p>
+                                <p><strong>🎯 Objetivo:</strong> Sitio web completo para florería con catálogo y contacto</p>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://patidepollo.github.io/Proyecto-Floreria/vivero-florencio.html" target="_blank" class="btn">🌐 Ver Demo</a>
+                                <button class="btn btn-secondary" onclick="openModal('modal2')">📖 Más Info</button>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <img src="imgs/pro/panaderia.png" alt="Panadería Tortuguitas" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDMwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjJGMkYyIi8+CjxjaXJjbGUgY3g9IjE1MCIgY3k9IjEwMCIgcj0iNDAiIGZpbGw9IiM5NjRCMDAiLz4KPHR0ZXh0IHg9IjE1MCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMzMzIiBmb250LWZhbWlseT0iSW50ZXIiIGZvbnQtc2l6ZT0iMTAiPlBhbmFkZXLDrWEgVG9ydHVndWl0YXM8L3RleHQ+Cjwvc3ZnPgo='"/>
+                            <h3>Panadería Tortuguitas</h3>
+                            <div class="project-info">
+                                <p><strong>📅 Fecha:</strong> 21/04/2025</p>
+                                <p><strong>👨‍💻 Desarrollador:</strong> Florencio Elías</p>
+                                <p><strong>🛠️ Tecnologías:</strong> HTML, CSS, JavaScript, PHP</p>
+                                <p><strong>🎯 Objetivo:</strong> Plataforma web completa para cafetería con sistema de pedidos</p>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://lavaganciaoficial.github.io/PanaderiaTortuguitas/landingpage/index.html" target="_blank" class="btn">🌐 Ver Demo</a>
+                                <button class="btn btn-secondary" onclick="openModal('modal3')">📖 Más Info</button>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <img src="imgs/pro/barriogestion.png" alt="Barrio Gestión" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDMwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjJGMkYyIi8+CjxjaXJjbGUgY3g9IjE1MCIgY3k9IjEwMCIgcj0iNDAiIGZpbGw9IiM5NjRCMDAiLz4KPHR0ZXh0IHg9IjE1MCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMzMzIiBmb250LWZhbWlseT0iSW50ZXIiIGZvbnQtc2l6ZT0iMTIiPkJhcnJpbyBHZXN0acOzbjwvdGV4dD4KPC9zdmc+Cg=='"/>
+                            <h3>Barrio Gestión</h3>
+                            <div class="project-info">
+                                <p><strong>📅 Fecha:</strong> 07/04/2025</p>
+                                <p><strong>👥 Equipo:</strong> Florencio + 4 colaboradores</p>
+                                <p><strong>🛠️ Tecnologías:</strong> HTML, CSS, PHP</p>
+                                <p><strong>🎯 Objetivo:</strong> Sistema base para proyecto de tesis - Gestión barrial</p>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://variableslocas.github.io/BarrioGestion/" target="_blank" class="btn">🌐 Ver Demo</a>
+                                <button class="btn btn-secondary" onclick="openModal('modal4')">📖 Más Info</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="repositories" class="tab-content">
+                    <h2>🔗 Repositorios en GitHub</h2>
+                    <div class="github-links">
+                        <a href="https://github.com/PatiDePollo/Proyecto.-EduControl" target="_blank" class="repo-card">
+                            <h3>📚 Edu-Control</h3>
+                            <p>Repositorio personal • Landing page educativa</p>
+                        </a>
+                        <a href="https://github.com/PatiDePollo/Proyecto-Floreria" target="_blank" class="repo-card">
+                            <h3>🌸 Florería Florencio</h3>
+                            <p>Repositorio personal • Sitio web comercial</p>
+                        </a>
+                        <a href="https://github.com/LaVaganciaOficial/PanaderiaTortuguitas" target="_blank" class="repo-card">
+                            <h3>🥐 Panadería Tortuguitas</h3>
+                            <p>Repositorio grupal • Plataforma completa</p>
+                        </a>
+                        <a href="https://github.com/VariablesLocas/BarrioGestion" target="_blank" class="repo-card">
+                            <h3>🏘️ Barrio Gestión</h3>
+                            <p>Repositorio grupal • Proyecto de tesis</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="links" class="reveal">
+            <h2 id="repos">🔗 Repositorios en GitHub</h2>
+            <br>
+            <div class="github-links">
+                <a href="https://github.com/PatiDePollo/Proyecto.-EduControl" target="_blank" class="repo-card">
+                    <h3>📚 Edu-Control</h3>
+                    <p>Repositorio personal • Landing page educativa</p>
+                </a>
+                <a href="https://github.com/PatiDePollo/Proyecto-Floreria" target="_blank" class="repo-card">
+                    <h3>🌸 Florería Florencio</h3>
+                    <p>Repositorio personal • Sitio web comercial</p>
+                </a>
+                <a href="https://github.com/LaVaganciaOficial/PanaderiaTortuguitas" target="_blank" class="repo-card">
+                    <h3>🥐 Panadería Tortuguitas</h3>
+                    <p>Repositorio grupal • Plataforma completa</p>
+                </a>
+                <a href="https://github.com/VariablesLocas/BarrioGestion" target="_blank" class="repo-card">
+                    <h3>🏘️ Barrio Gestión</h3>
+                    <p>Repositorio grupal • Proyecto de tesis</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modales para información detallada -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>📚 Edu-Control - Información Detallada</h2>
+            <p><strong>Descripción:</strong> Landing page moderna y responsiva diseñada para representar un sistema de gestión escolar ficticio. El proyecto se enfoca en crear una interfaz atractiva y profesional que comunique eficazmente los beneficios del producto.</p>
+            <p><strong>Características principales:</strong></p>
+            <ul>
+                <li>• Diseño responsivo y moderno</li>
+                <li>• Navegación intuitiva</li>
+                <li>• Secciones informativas bien estructuradas</li>
+                <li>• Optimizado para diferentes dispositivos</li>
+            </ul>
+            <p><strong>Aprendizajes:</strong> Estructuración semántica de HTML, diseño responsivo con CSS, y principios de UX/UI para landing pages.</p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>🌸 Florería Florencio - Información Detallada</h2>
+            <p><strong>Descripción:</strong> Sitio web completo para una florería que incluye catálogo de productos, información de servicios, y formularios de contacto. Diseñado con un enfoque comercial y estético apropiado para el rubro.</p>
+            <p><strong>Características principales:</strong></p>
+            <ul>
+                <li>• Galería de productos con diseño atractivo</li>
+                <li>• Formularios de contacto funcionales</li>
+                <li>• Información de servicios y ubicación</li>
+                <li>• Diseño responsive para móviles</li>
+            </ul>
+            <p><strong>Aprendizajes:</strong> Desarrollo de sitios web comerciales, manejo de formularios, y diseño orientado al cliente final.</p>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h2>🥐 Panadería Tortuguitas - Información Detallada</h2>
+            <p><strong>Descripción:</strong> Plataforma web completa para una cafetería/panadería que combina presencia online con funcionalidades de negocio. Incluye sistema de pedidos y gestión de productos.</p>
+            <p><strong>Características principales:</strong></p>
+            <ul>
+                <li>• Sistema de pedidos online</li>
+                <li>• Catálogo dinámico de productos</li>
+                <li>• Integración con PHP para backend</li>
+                <li>• Interfaz de administración básica</li>
+            </ul>
+            <p><strong>Aprendizajes:</strong> Desarrollo full-stack básico, integración frontend-backend, y manejo de bases de datos simples con PHP.</p>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <h2>🏘️ Barrio Gestión - Información Detallada</h2>
+            <p><strong>Descripción:</strong> Sistema colaborativo desarrollado como base para el proyecto de tesis. Se enfoca en la gestión y comunicación dentro de comunidades barriales, facilitando la administración de recursos y eventos.</p>
+            <p><strong>Características principales:</strong></p>
+            <ul>
+                <li>• Trabajo colaborativo en equipo de 5 personas</li>
+                <li>• Sistema de gestión comunitaria</li>
+                <li>• Arquitectura escalable para futuras mejoras</li>
+                <li>• Metodologías de desarrollo ágil</li>
+            </ul>
+            <p><strong>Colaboradores:</strong> <a href="https://github.com/BringFeel" target="_blank">BringFeel</a>, <a href="https://github.com/lozalen341" target="_blank">Lozalen341</a>, <a href="https://github.com/ThomWorks" target="_blank">ThomWorks</a>, <a href="https://github.com/juli20251" target="_blank">Juli20251</a></p>
+            <p><strong>Aprendizajes:</strong> Trabajo en equipo, control de versiones con Git, arquitectura de software, y gestión de proyectos.</p>
+        </div>
+    </div>
+    <footer>
+            <div class="social-links">
+                <ul>
+                <li><a class="facebook" href="https://www.facebook.com/profile.php?id=61553286780009" target="_blank">Facebook</a></li>
+                <li><a class="instagram" href="https://www.instagram.com/pati_de_pollo/?next=%2F" target="_blank">Instagram</a></li>
+                <li><a class="linkedin" href="https://linkedin.com/in/giuliano-florencio-3938791b4" target="_blank">LinkedIn</a></li>
+                <li><a class="github" href="https://github.com/PatiDePollo" target="_blank">GitHub</a></li>
+            </ul>
+            </div>
+        <p>&copy; 2025 Florencio Elías Giuliano - PatiDePollo | Desarrollador Web y Experto en Ciberseguridad en formación 🚀</p>
+    </footer>
+</body>
+<script src="funciones.js"></script>
+</html>
